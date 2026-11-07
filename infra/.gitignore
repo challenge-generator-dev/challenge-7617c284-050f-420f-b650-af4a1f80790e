@@ -1,0 +1,80 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.backup
+*.backup.*
+.terraform/
+.terraform.lock.hcl
+*.log
+
+# Directorios de módulos descargados
+.modules/
+.modules.lock
+
+# Archivos de locking de proveedores
+provider-lock.json
+
+# Credenciales y secretos
+*.pem
+*.key
+credentials.json
+secrets/
+*.secret
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs generados
+output/
+plan.out
+plan.tfplan
+
+# Scripts temporales
+tmp/
+temp/
+
+# Archivos de entorno local
+.env
+.env.local
+.local/
+
+# Terraform cloud
+.terraformrc
+terraform.rc
+
+# Lock files de dependencias
+package-lock.json
+yarn.lock
+Pipfile.lock
+Gemfile.lock
+
+# Logs de ejecución
+*.info
+*.warn
+*.error
+
+# Archivos de testing que no deben subirse
+tests/.terraform/
+test/.terraform/
+
+# Certificados y claves de AWS (nunca en repositorio)
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# Archivos de configuración sensibles
+appspec.yml
+deploy_key*
+*_rsa*
+*_dsa*
